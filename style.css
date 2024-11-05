@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 3px solid;
+  display: inline-block;
+  text-align: center;
+}
+
+.test-padding1 {
+  background-color: orange;
+  border: 10px solid;
+  height: 100px;
+  width: 100px;
+}
+
+.classe {
+  color: red;
+}
+
+.classe {
+  color: green;
+}

@@ -2,8 +2,8 @@
 
 // -------------------------GET ELEMENT----------------------------
 
-//----------------- GETELEMENTBYTAGNAME-----------------
-// getElementByTagName ti consente di selezionare un elemento
+//----------------- GETELEMENTSBYTAGNAME-----------------
+// getElementsByTagName ti consente di selezionare un elemento
 // ma a differena del querySelector ritorna un HTMLCOLLECTION che poi per
 // lavorare agevolmente andrà converitto in un array
 const h1_2 = document.getElementsByTagName("h1");
@@ -20,8 +20,7 @@ console.log("HTMLCOLLECTION convertita in array ", h1_2Arr);
 const p = document.getElementById("parag");
 console.log("getElementById ", p);
 
-//----------------- GETELEMENTBYTCLASSNAME----------------
-// GETELEMTSBYCLASSNAME
+//----------------- GETELEMENTSBYTCLASSNAME----------------
 // getElemetsByClassName è simile al getElementsByTagName in quanto anche lui restituisce
 // un HTMLCOLLECTION preferibilmente da convertire in array
 const p_2 = document.getElementsByClassName("parag");
@@ -53,3 +52,21 @@ const p_4Arr = Array.from(p_4); //converto la nodeList in un array per comodità
 // COME UTILIZZARE I SELETTORI AVANZATI DEL QUERYSELECTOR
 const selettoreCss = document.querySelector("div > p + h3");
 console.log(selettoreCss);
+
+// USARE QUERYSELECTOR PER PRENDERE ID E CLASSI
+// query selector per id (anche se preferibile usare getlEmentById in questo caso)
+const h1_3 = document.querySelector("#h1");
+console.log("querySelector con i selettori css per id", h1_3);
+
+// query selector per classi (
+//più comodo del getElementsByTagsName perchè torna una
+//node_list che è migliore della HTMLCOLLECTION
+//)
+// in questo caso come prima prenderà solo la prima occorrenza che trova
+const h1_4 = document.querySelector(".h1");
+console.log("querySelector selettori css per calssi ", h1_4);
+
+// nel caso in cui ti servono tutti gli elementi con la classe indicata, utilizzerai
+// il querySelectorAll
+const h1_5 = document.querySelectorAll(".h1");
+console.log("querySelectorAll utilizzato per classi ", h1_5);

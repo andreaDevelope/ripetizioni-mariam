@@ -49,6 +49,10 @@ const p_4 = document.querySelectorAll("p");
 console.log("querySeectorAll per tag ", p_4);
 const p_4Arr = Array.from(p_4); //converto la nodeList in un array per comodità
 
+// p_4Arr.forEach((p) => {
+//   p.style.color = "red";
+// });
+
 // COME UTILIZZARE I SELETTORI AVANZATI DEL QUERYSELECTOR
 const selettoreCss = document.querySelector("div > p + h3");
 console.log(selettoreCss);

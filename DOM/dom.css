@@ -1,0 +1,18 @@
+/* utilizziamo i stessi selettori che utilizziamo nel js con il querySelector
+per dimostrare che sono uguali */
+
+p {
+  color: red;
+}
+
+div > p + h3 {
+  color: red;
+}
+
+.parag {
+  color: green;
+}
+
+#h1 {
+  color: yellow;
+}
